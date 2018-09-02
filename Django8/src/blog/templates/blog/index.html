@@ -1,0 +1,28 @@
+{% extends 'blog/base.html'%}
+
+{% block content %}
+	{% if page_obj.has_previous %}
+		<a href="?page={{ page_obj.previous_page_number }}">이전 페이지</a>
+	{% endif %}
+	{% if page_obj.has_next %}
+		<a href="?page={{ page_obj.next_page_numer}}">다음 페이지</a>
+	{% endif %}
+	<br>
+	<table style="width:100%">
+	
+		<tr>
+			<th> 글 번호 </th>
+			<th> 제목 </th>
+			<th> 작성자 </th>
+			<th> 작성일 </th>
+		</tr>
+		{% for post in list %}
+			<tr>
+				<td>{{ post.id }}</td>
+				<td>{{post.headline}}</td>
+				<td>{{post.author.username}}</td>
+				<td>{{post.pub_date}}</td>			
+			</tr>		
+		{% endfor %}
+	</table>
+{% endblock %}

@@ -1,0 +1,47 @@
+sweetlatte15@nate.com(네트워크기초 김보현강사님)
+1주차 TCP/IP
+2주차 Cisco 장비와 IOS
+3주차 Routing
+4주차 ACL/NAT
+
+네트워크 장비가 정보를 학습하는 방법
+1. Static (수동, 정적)
+	관리자가 장비에 정보를 입력
+	시간이 지나도 사라지지 않음
+2. Dynamic(자동, 동적)
+	다른 장비를 통해 정보를 얻음
+	시간이 지나면 사라짐
+
+우선순위는 Static이 더 높다.
+
+컴퓨터가 데이터를 보내는 방법
+1. Unicast  1:1 로 정보를 전달하는 방법
+2. Broadcast 같은 네트워크 안의 모든 장비들에게 전달하는 방법
+	Broadcast data가 전달되는 범위를 Broadcast domain이라고 함
+
+IPv4(4byte)
+	10진수로 표현(ex.192.168.44.3)
+	다른 네트워크 장비와 통신할 때
+
+물리적주소(MAC주소 6byte)
+	16진수로 표현 (ex. 00-50-56-C0-00-03)
+	같은 네트워크 장비와 통신할 때
+
+LAN(local area network)
+	-좁은 지역을 연결하기 위한 네트워크 초기 투자비용이 많이 들고 유지비용은 적게 든다
+	-관리자가 직접 관리하는 방식 (속도는 100Mbps 가 일반적)
+
+WAN(Wide Area Network)
+	-물리적으로 넓은 범위를 연결한 광역 네트워크 초기 투자비용은 적게 들고 유지비용은 많이 든다
+	-서비스 제공업체에서 관리를 함 (속도는 보통 느린 연결 56Kbps ~ T1 or E1연결이 일반적이다)
+	  (ISP = Internet Service Provider) - ex) KT , SKT , LG
+Internet 이란 다수의네트워크(ISP회사)가 서로 접속하여 하나의 큰 네트워크로 통합된 것
+
+Protocol = 컴퓨터나 네트워크 장비가 서로 통신하기 위해서 미리 정해놓은 약속(통신규약)
+
+       - RFC(IETF)
+	많은 프로토콜의 정의나 설명의 RFC(Request For Comments)문서로 정리되어 있으며
+	각 프로토콜의 역할과 구성이 명확히 정해져 있다.
+	www.ietf.org
+
+
